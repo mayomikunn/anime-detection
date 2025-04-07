@@ -25,7 +25,7 @@ def process_single_image(image_path):
 
 
 def load_database_images():
-    base_dir = "C:/Users/mayom/Downloads/archive/data/anime_images"
+    base_dir = "C:/Users/mayom/Pictures/Anime images"
     processed_parent = "./processed_images"
 
     # Create the parent folder for processed images if it doesn't exist
