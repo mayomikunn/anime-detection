@@ -56,3 +56,11 @@ Output:
 Return the most similar anime images alongside a similarity percentage.
 
 Integrate with AniList API to retrieve anime titles and posters.
+
+## Results & Insights
+
+Combining colour histograms and keypoint-based similarity yielded higher accuracy than colour-only
+
+Preprocessing reduced retrieval times significantly.
+
+Keypoint similarity improved robustness when dealing with images that had different scales, orientations, or partial occlusions.
