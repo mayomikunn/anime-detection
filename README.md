@@ -1,11 +1,11 @@
-Anime Detection Project
-Overview
+# **Anime Detection Project**
+## Overview
 
 This project is a content-based image retrieval (CBIR) system designed to identify the anime series from which a given clip or frame originates. By combining techniques from computer vision and image processing, the system compares input images against a large dataset of anime images to find the closest matches.
 
 The project was built as part of my final-year university work, but it also reflects my personal interest in applying machine learning principles, computer vision, and software engineering to solve real-world problems.
 
-Tech Stack
+## Tech Stack
 
 Programming Language: Python
 
@@ -19,7 +19,7 @@ NumPy, SciPy (matrix operations, distance computations)
 
 Matplotlib (visualisation of results)
 
-Methodology
+## Methodology
 
 Database Preprocessing:
 
