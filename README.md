@@ -5,6 +5,26 @@ This project is a content-based image retrieval (CBIR) system designed to identi
 
 The project was built as part of my final-year university work, but it also reflects my personal interest in applying machine learning principles, computer vision, and software engineering to solve real-world problems.
 
+## Features
+
+Preprocessing and Clustering
+
+Database images are preprocessed once and clustered using K-means based on dominant colours to reduce search space.
+
+Feature Extraction
+
+Colour Features: Histograms with similarity measured via Euclidean Distance.
+
+Keypoint Features: Extracted using feature detection algorithms (SIFT), then compared via descriptor matching.
+
+Query Processing
+
+User-uploaded images are preprocessed in the same way as database images.
+
+Performance Considerations
+
+Precomputation of features improves runtime performance during queries.
+
 ## Tech Stack
 
 Programming Language: Python
@@ -23,20 +43,16 @@ Matplotlib (visualisation of results)
 
 Database Preprocessing:
 
-Extract dominant colours, build histograms, and compute edge maps for all images.
-
-Cluster images to reduce retrieval time.
+Extract dominant colours and keypoints for all images.
 
 Query Matching:
 
-Preprocess query image using same pipeline.
+Preprocess query image using the same pipeline.
 
-Identify the closest cluster based on dominant colour similarity.
-
-Compare against preprocessed features using multiple similarity metrics.
+Compare keypoint descriptors and colour histograms against preprocessed features.
 
 Output:
 
 Return the most similar anime images alongside a similarity percentage.
 
-(Future work: integrate with AniList API to retrieve anime descriptions.)
+Integrate with AniList API to retrieve anime titles and posters.
