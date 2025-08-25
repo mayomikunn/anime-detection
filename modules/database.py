@@ -1,7 +1,10 @@
 import os
 import cv2
-
+import numpy as np
 from preprocessing import preprocess_image
+
+from feature_extraction import extract_sift_descriptors
+
 
 
 def get_all_image_paths(base_dir):
@@ -56,6 +59,3 @@ def load_database_images():
                 cv2.imwrite(dest_path, processed_image)
 
     print()  # Move to the next line after finishing
-
-
-

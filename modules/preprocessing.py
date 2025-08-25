@@ -1,12 +1,5 @@
 import cv2
 
-import numpy as np
-import os
-import pickle
-from feature_extraction import extract_colour_histogram
-
-
-
 
 def preprocess_image(user_image_path):
       # Load the image
@@ -24,7 +17,7 @@ def preprocess_image(user_image_path):
     # print(img_normalized)
     # print(img)
     # print(img.dtype)
-    cv2.imwrite("input_preprocessed.jpg", img_denoised)
+    cv2.imwrite("input_preprocessed.jpg", img_denoised) # Saves preprocessed input image
     return img_denoised  # Processed image as NumPy array
 
 
